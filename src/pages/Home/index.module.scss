@@ -1,0 +1,21 @@
+@import '../../styles/variable.scss';
+
+
+.container {
+  background-color: $BACKGROUND_GREY_COLOR;
+  .appbar {
+    background-color: #fff;
+    padding: 5px 12px;
+    a {
+      color: $TEXT_BLACK_COLOR;
+    }
+    .appTitle {
+      color: $TEXT_BLACK_COLOR;
+      font-size: $X_LARGE_SIZE;
+      font-weight: 800;
+    }
+    .icon {
+      font-size: 24px;
+    }
+  }
+}

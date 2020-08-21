@@ -1,0 +1,60 @@
+@import '../../../../styles/mixin.scss';
+@import '../../../../styles/variable.scss';
+
+
+.post {
+  margin: 10px;
+  .user {
+    display: flex;
+    align-items: center;
+    .avatar {
+      @include round-shape(32px);
+    }
+    .userInfo {
+      margin-left: 8px;
+      font-size: $NORMAL_SIZE;
+      .extra {
+        font-size: $SMALL_SIZE;
+        color: $TEXT_GREY_COLOR;
+      }
+    }
+  }
+  .content {
+    .text {
+      margin-bottom: 10px;
+      word-break: break-all;
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      .imgWrapper {
+        box-sizing: border-box;
+        width: 33%;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        .imgContainer {
+          padding-bottom: 100%;
+          height: 0;
+          position: relative;
+          img {
+            @include square-shape(100%);
+            position: absolute;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global(.ant-card-head) {
+  padding: 0 8px;
+}
+:global(.ant-card-body) {
+  padding: 8px;
+}
+
+:global(.ant-card-head-title) {
+  padding: 8px 0;
+}

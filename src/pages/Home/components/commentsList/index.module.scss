@@ -1,0 +1,15 @@
+@import '../../../../styles/variable.scss';
+
+.commentsList {
+  .loadMore {
+    text-align: center;
+    margin-top: 12px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .extra {
+    font-size: $SMALL_SIZE;
+    color: $TEXT_GREY_COLOR;
+    margin-left: 10px;
+  }
+}

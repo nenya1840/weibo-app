@@ -1,0 +1,9 @@
+@mixin square-shape($length) {
+  width: $length;
+  height: $length;
+}
+
+@mixin round-shape($length) {
+  @include square-shape($length);
+  border-radius: 50%;
+}
